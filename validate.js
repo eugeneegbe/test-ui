@@ -1,30 +1,34 @@
       // Create form elements (two text inputs and the button input, in this example).
-var name1 = new OO.ui.TextInputWidget( { 
-  placeholder: 'Name'
-} );
- 
-var message = new OO.ui.MultilineTextInputWidget( {
-  rows: 3,
-  placeholder : 'Something\n here'
-} );
 
-var radiobtn = new OO.ui.RadioSelectInputWidget( {
-    options: [
-      {
-        data: 'cat',
-        label: 'Cat'
-      },
-      {
-        data: 'dog',
-        label: 'Dog'
-      },
-      {
-        data: 'goldfish',
-        label: 'Goldfish'
-      }
-    ]
-} );
 
+
+function createMultilineTextInputWidget(dt){
+    var message = new OO.ui.MultilineTextInputWidget( {
+      rows: 3,
+      placeholder : 'Something\n here'
+    } );
+}
+
+function createRadioSelectInputWidget(d){
+    var radiobtn = new OO.ui.RadioSelectInputWidget( {
+        options: [
+          {
+            data: 'cat',
+            label: 'Cat'
+          },
+          {
+            data: 'dog',
+            label: 'Dog'
+          },
+          {
+            data: 'goldfish',
+            label: 'Goldfish'
+          }
+        ]
+    } );
+}
+
+function create
 var animalList = new OO.ui.CheckboxMultiselectInputWidget( {
   value: [
     'dog',
@@ -252,6 +256,7 @@ fieldset.addItems( [
   new OO.ui.FieldLayout( submit )   
 
 ] );
+
 
  
 // Add the FieldsetLayout to a FormLayout. 

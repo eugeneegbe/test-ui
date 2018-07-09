@@ -1,0 +1,84 @@
+{
+	"method": "get",
+	"class": ["class-this class-that class-end"], 
+	"id": "elt_id",
+	"fs_label": "This is a sample form for testing",
+	"fs-class": "container",
+	"schema": [
+		{	
+			"type": "smallTextBox",
+			"placeholder": "Enter the text",
+			"title": "Textbox",
+			"characterLength":200,
+			"mandatory":false
+		},
+		{
+			"type": "dropdown",
+			"placeholder": "Country",
+			"options": [
+						    {
+						      "data": "Cameroon",
+						      "label": "Cameroon"
+						    },
+						    {
+						      "data": "Ghana",
+						      "label": "Ghana"
+						    },
+						    {
+						      "data": "Nigeria",
+						      "label": "Nigeria"
+						    },
+						    {
+						      "data": "South Africa",
+						      "label": "South Africa"
+						    },
+						    {
+						      "data": "Kenya",
+						      "label": "Kenya"
+						    }
+								
+						],
+			"menu": { "filterFromInput": false	 }
+		},
+		{
+			"type": "MultilineText",
+			"rows": 4,
+			"value": "",
+			"autosize": true,
+			"placeholder": "Multiline Text"
+		},
+		{
+			"type": "CheckboxMultiselect",
+			"value": [ "dog","cat" ],
+			"options": [
+				{
+					"data": "cat",
+					"label": "Cat"
+				},
+				{
+					"data": "dog",
+					"label": "Dog (disabled)\u200e",
+					"disabled": true
+				},
+				{
+					"data": "goldfish",
+					"label": "Goldfish"
+				}
+			]
+		},
+		{
+			"type": "SelectFileWidget",
+			"label": "Select A file",
+			"showDropTarget": false
+		},
+		{
+			"type": "Label",
+			"label": "This is a label text that can be used"
+		},
+		{
+			"type": "button",
+			"label": "Back",
+			"flags": [ "destructive" ]
+		}
+	]
+}
